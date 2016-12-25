@@ -1,4 +1,4 @@
-package examples
+package net.scalapro.sortable
 
 import org.scalajs.dom._
 
