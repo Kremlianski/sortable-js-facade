@@ -1,7 +1,7 @@
 # sortable-js-facade
 a scala.js facade to [sortable.js lib](https://github.com/RubaXa/Sortable)
 
-Add to build.sbt:
+Add to **build.sbt**:
 
 ```scala
 libraryDependencies ++= Seq(
@@ -17,12 +17,12 @@ resolvers +=
   "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 ```  
   
-Simple usage:
+**Simple usage**:
 ```scala
 new Sortable(dom.document.getElementById("items"), null)
 ```
 
-with options:
+**with options**:
 ```scala
 val put: js.Function1[Sortable, js.Any] = {(to:Sortable ) => to.el.children.length < 4}
 
