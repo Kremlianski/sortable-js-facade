@@ -36,5 +36,5 @@ new Sortable(dom.document.getElementById("qux1"), js.Dictionary(
  )
 ```
 
-###see [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
+###See [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
