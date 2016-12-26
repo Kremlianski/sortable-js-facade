@@ -38,3 +38,5 @@ new Sortable(dom.document.getElementById("qux1"), js.Dictionary(
 
 ###See [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
+###See [DEMO](http://projects.scalapro.net/sortable-js-facade/)
+
