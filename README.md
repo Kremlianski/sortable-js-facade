@@ -22,7 +22,7 @@ resolvers +=
 new Sortable(dom.document.getElementById("items"), null)
 ```
 
-**with options**:
+**With options**:
 ```scala
 val put: js.Function1[Sortable, js.Any] = {(to:Sortable ) => to.el.children.length < 4}
 
