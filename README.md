@@ -5,7 +5,7 @@ Add to **build.sbt**:
 
 ```scala
 libraryDependencies ++= Seq(
-  "net.scalapro" %%% "sortable-js-facade" % "0.1.1-SNAPSHOT"
+  "net.scalapro" %%% "sortable-js-facade" % "0.2-SNAPSHOT"
 )
 
 //you can't add sortable.js 1.5.0 yet. If you need it, add it to html of the page manually
@@ -20,6 +20,11 @@ resolvers +=
 **Simple usage**:
 ```scala
 new Sortable(dom.document.getElementById("items"), null)
+```
+
+or using the companion object:
+```
+Sortable(dom.document.getElementById("items"))
 ```
 
 **With options**:
