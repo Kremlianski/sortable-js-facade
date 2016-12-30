@@ -23,7 +23,7 @@ new Sortable(dom.document.getElementById("items"), null)
 ```
 
 or using the companion object:
-```
+```scala
 Sortable(dom.document.getElementById("items"))
 ```
 
