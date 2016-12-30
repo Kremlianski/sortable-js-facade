@@ -108,69 +108,69 @@ Sortable(el, prop)
 
 ```
 ###Members
-___group___: js.UndefOr[String | js.Any] - defines a group name or an object
+___group___: _js.UndefOr[String | js.Any]_ - defines a group name or an object
 
-__sort__: js.UndefOr[Boolean] - sorting inside list
+__sort__: _js.UndefOr[Boolean]_ - sorting inside list
 
-__delay__: js.UndefOr[Int] - time in milliseconds to define when the sorting should start
+__delay__: _js.UndefOr[Int]_ - time in milliseconds to define when the sorting should start
 
-__disable__: js.UndefOr[Boolean] - disables the sortable if set to true.
+__disable__: _js.UndefOr[Boolean]_ - disables the sortable if set to true.
 
-__store__: js.UndefOr[js.Any] = an object
+__store__: _js.UndefOr[js.Any]_ - an object
 
-__animation__: js.UndefOr[Int] -ms, animation speed moving items when sorting, `0` — without animation
+__animation__: _js.UndefOr[Int]_ - ms, animation speed moving items when sorting, `0` — without animation
 
-__handle__: js.UndefOr[String] - drag handle selector within list items
+__handle__: _js.UndefOr[String]_ - drag handle selector within list items
 
-__filter__: js.UndefOr[String] - selectors that do not lead to dragging (String or Function)
+__filter__: _js.UndefOr[String]_ - selectors that do not lead to dragging (String or Function)
 
-__draggable__: js.UndefOr[String] - specifies which items inside the element should be draggable
+__draggable__: _js.UndefOr[String]_ - specifies which items inside the element should be draggable
 
-__ghostClass__: js.UndefOr[String] - class name for the drop placeholder
+__ghostClass__: _js.UndefOr[String]_ - class name for the drop placeholder
 
-__chosenClass__: js.UndefOr[String] - class name for the chosen item
+__chosenClass__: _js.UndefOr[String]_ - class name for the chosen item
 
-__dragClass__: js.UndefOr[String] - class name for the dragging item
+__dragClass__: _js.UndefOr[String]_ - class name for the dragging item
 
-__dataIdAttr__: js.UndefOr[String]
+__dataIdAttr__: _js.UndefOr[String]_
 
-__forceFallback__: js.UndefOr[Boolean] - ignore the HTML5 DnD behaviour and force the fallback to kick in
+__forceFallback__: _js.UndefOr[Boolean]_ - ignore the HTML5 DnD behaviour and force the fallback to kick in
 
-__fallbackClass__: js.UndefOr[String] - class name for the cloned DOM Element when using forceFallback
+__fallbackClass__: _js.UndefOr[String]_ - class name for the cloned DOM Element when using forceFallback
 
-__fallbackOnBody__: js.UndefOr[Boolean] - appends the cloned DOM Element into the Document's Body
+__fallbackOnBody__: _js.UndefOr[Boolean]_ - appends the cloned DOM Element into the Document's Body
 
-__fallbackTolerance__: js.UndefOr[Int] - specifies in pixels how far the mouse should move before it's considered as a drag.
+__fallbackTolerance__: _js.UndefOr[Int]_ - specifies in pixels how far the mouse should move before it's considered as a drag.
 
-__scroll__: js.UndefOr[Boolean | Element] - HTMLElement
+__scroll__: _js.UndefOr[Boolean | Element]_ - HTMLElement
 
-__scrollFn__: js.UndefOr[js.Function3[Int, Int, Event, Unit]] - function(offsetX, offsetY, originalEvent) { ... }, if you have custom scrollbar scrollFn may be used for autoscrolling
+__scrollFn__: _js.UndefOr[js.Function3[Int, Int, Event, Unit]]_ - function(offsetX, offsetY, originalEvent) { ... }, if you have custom scrollbar scrollFn may be used for autoscrolling
 
-__scrollSensitivity__: js.UndefOr[Int] - px, how near the mouse must be to an edge to start scrolling.
+__scrollSensitivity__: _js.UndefOr[Int]_ - px, how near the mouse must be to an edge to start scrolling.
 
-__scrollSpeed__: js.UndefOr[Int] - px
+__scrollSpeed__: _js.UndefOr[Int]_ - px
 
-__setData__: js.UndefOr[js.Function2[DataTransfer, Element,Unit]] - sets data to the DataTransfer object of HTML5 DragEvent
+__setData__: _js.UndefOr[js.Function2[DataTransfer, Element,Unit]]_ - sets data to the DataTransfer object of HTML5 DragEvent
 
-__onChoose__: js.UndefOr[js.Function1[EventS, Unit]] -  Element is chosen
+__onChoose__: _js.UndefOr[js.Function1[EventS, Unit]]_ -  Element is chosen
 
-__onStart__: js.UndefOr[js.Function1[EventS, Unit]] - Element dragging started
+__onStart__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Element dragging started
   
-__onEnd__: js.UndefOr[js.Function1[EventS, Unit]] - Element dragging ended
+__onEnd__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Element dragging ended
 
-__onAdd__: js.UndefOr[js.Function1[EventS, Unit]] - Element is dropped into the list from another list
+__onAdd__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Element is dropped into the list from another list
 
-__onUpdate__: js.UndefOr[js.Function1[EventS, Unit]] - Changed sorting within list
+__onUpdate__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Changed sorting within list
 
-__onSort__: js.UndefOr[js.Function1[EventS, Unit]] - Called by any change to the list (add / update / remove)
+__onSort__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Called by any change to the list (add / update / remove)
 
-__onRemove__: js.UndefOr[js.Function1[EventS, Unit]] - Element is removed from the list into another list
+__onRemove__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Element is removed from the list into another list
 
-__onFilter__: js.UndefOr[js.Function1[EventS, Unit]] - Attempt to drag a filtered element
+__onFilter__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Attempt to drag a filtered element
 
-__onMove__: js.UndefOr[js.Function2[EventM, Event, Unit]] - Event when you move an item in the list or between lists
+__onMove__: _js.UndefOr[js.Function2[EventM, Event, Unit]]_ - Event when you move an item in the list or between lists
 
-__onClone__: js.UndefOr[js.Function1[EventS, Unit]] - Called when creating a clone of element
+__onClone__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Called when creating a clone of element
 
 
 
