@@ -1,5 +1,5 @@
 # sortable-js-facade
-##a scala.js facade to [sortable.js](https://github.com/RubaXa/Sortable)
+##a scala.js facade for the [Sortable.js](https://github.com/RubaXa/Sortable)
 
 Add to **build.sbt**:
 
