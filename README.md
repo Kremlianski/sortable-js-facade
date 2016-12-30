@@ -46,15 +46,27 @@ new Sortable(dom.document.getElementById("qux1"), js.Dictionary(
 ```scala
 new Sortable(element, options)
 ```
-__element__:org.scalajs.dom.Element - an html element that contains a list of elements to be sorted
+__element__: _org.scalajs.dom.Element_ - an html element that contains a list of elements to be sorted
 
-__options__: js.Any - a plain javascript object of options. You can use js.Dictionary, js.Dynamic.literal. Or you can use the SortableProps trait (see below). The full list of options is described [here](https://github.com/RubaXa/Sortable#options). Can be _null_. Then all options take their default values.
+__options__: _js.Any_ - a plain javascript object of options. You can use _js.Dictionary_, _js.Dynamic.literal_. Or you can use the _SortableProps_ trait (see below). The full list of options is described [here](https://github.com/RubaXa/Sortable#options). Can be _null_. Then all options take their default values.
 
 ###Methods
 
+__option(name: String): js.Dynamic__ - returns the value of the option
 
-      
-      
+__option(name: String, value: js.Any): Unit__ - set a new value of the option
+
+__closest(el: Node, selector: String): js.UndefOr[Node]__ or __closest(el: Node): js.UndefOr[Node]__ - for each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.
+
+__toArray(): js.Array[String]__ - serializes the sortable's item data-id's (dataIdAttr option) into an array of string.
+
+__sort(order: js.Array[String]): Unit__ - sorts the elements according to the array
+
+__save(): Unit__ - saves the current sorting
+
+__destroy(): Unit__ - removes the sortable functionality completely
+
+
       
 ###See [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
