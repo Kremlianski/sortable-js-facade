@@ -4,6 +4,15 @@
 ##a scala.js facade for the [Sortable.js](https://github.com/RubaXa/Sortable)
 
 
++ [Quick Start](https://github.com/Kremlianski/sortable-js-facade/blob/master/README.md#quick-start)
++ [class Sortable](https://github.com/Kremlianski/sortable-js-facade/blob/master/README.md#class-sortable)
++ [Companion](https://github.com/Kremlianski/sortable-js-facade/blob/master/README.md#companion)
++ [Events](https://github.com/Kremlianski/sortable-js-facade/blob/master/README.md#events)
++ [SortableProps trait](https://github.com/Kremlianski/sortable-js-facade/blob/master/README.md#sortableprops-trait)
++ [Utils object](https://github.com/Kremlianski/sortable-js-facade/blob/master/README.md#utils-object)
+
+
+
 ##Quick Start
 Add to **build.sbt**:
 
