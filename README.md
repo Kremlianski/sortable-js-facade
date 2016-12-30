@@ -75,6 +75,29 @@ Sortable(el2, options)
 
 ```
 
+##Events
+See [example](http://projects.scalapro.net/sortable-js-facade/#example12)
+###EventS (Sortable event)
+
++ to: HTMLElement — list, in which moved element.
++ from: HTMLElement — previous list
++ item: HTMLElement — dragged element
++ oldIndex: Number | undefined — old index within parent
++ newIndex: Number | undefined — new index within parent
+
+###EventM (Move Event)
+
++ to: HTMLElement
++ from: HTMLElement
++ dragged: HTMLElement
++ draggedRect: TextRectangle
++ related: HTMLElement — element on which have guided
++ relatedRect: TextRectangle
+
+
+
+
+
 
       
 ###See [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
