@@ -1,6 +1,10 @@
 # sortable-js-facade
+###See [DEMO](http://projects.scalapro.net/sortable-js-facade/)
+
 ##a scala.js facade for the [Sortable.js](https://github.com/RubaXa/Sortable)
 
+
+##Quick Start
 Add to **build.sbt**:
 
 ```scala
@@ -173,10 +177,39 @@ __onMove__: _js.UndefOr[js.Function2[EventM, Event, Unit]]_ - Event when you mov
 __onClone__: _js.UndefOr[js.Function1[EventS, Unit]]_ - Called when creating a clone of element
 
 
+## Utils object
+A set of useful static methods.
+
+__on(el:Node, event:String, fn: js.Function1[Event, Unit]):Unit__ - attaches an event handler function
+
+__off(el:Node, event:String, fn: js.Function1[Event, Unit]):Unit__ - removes an event handler
+
+__css(el:Node):js.Object__ - gets the values of all the CSS properties
+
+__css(el:Node, prop:String):js.Any__ - get the value of style properties
+
+__css(el:Node, prop:String, value:String):Unit__ - sets one CSS property
+
+__find(ctx:Node, tagName:String):js.Array[Node]__ - gets elements by tag name
+
+__find(ctx:Node, tagName:String, iterator:js.Function2[Node, Int, Unit]):js.Array[Node]__ - gets elements by tag name
+
+__bind(ctx:js.Any, fn:js.Function):js.Function__ - takes a function and returns a new one that will always have a particular context
+
+__is(el:Node, selector:String):Boolean__ - check the current matched set of elements against a selector
+
+__closest(el:Node, selector:String, ctx:Node):js.UndefOr[Node]__  or 
+__closest(el:Node, selector:String):js.UndefOr[Node]__ - for each element in the set, gets the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree
+
+__clone(el:Node):Node__ -  creates a deep copy of the set of matched elements
+
+__toggleClass(el:Node, name:String, state:Boolean):Uni__ - adds or removes a class from each element
 
 
-      
-###See [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
-###See [DEMO](http://projects.scalapro.net/sortable-js-facade/)
+
+###See [DEMO](http://projects.scalapro.net/sortable-js-facade/)      
+###See code of [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
+
+
 
