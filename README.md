@@ -40,7 +40,22 @@ new Sortable(dom.document.getElementById("qux1"), js.Dictionary(
     )
  )
 ```
+## class Sortable
+### Constructor
 
+```scala
+new Sortable(element, options)
+```
+__element__:org.scalajs.dom.Element - an html element that contains a list of elements to be sorted
+
+__options__: js.Any - a plain javascript object of options. You can use js.Dictionary, js.Dynamic.literal. Or you can use the SortableProps trait (see below). The full list of options is described [here](https://github.com/RubaXa/Sortable#options). Can be _null_. Then all options take their default values.
+
+###Methods
+
+
+      
+      
+      
 ###See [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
 ###See [DEMO](http://projects.scalapro.net/sortable-js-facade/)
