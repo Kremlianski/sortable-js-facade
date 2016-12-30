@@ -67,6 +67,15 @@ __save(): Unit__ - saves the current sorting
 __destroy(): Unit__ - removes the sortable functionality completely
 
 
+##Companion
+It has only one but very useful method __apply__, which is a facade for native static __create__ method. It allows to do this:
+```scala
+Sortable(el1)
+Sortable(el2, options)
+
+```
+
+
       
 ###See [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
