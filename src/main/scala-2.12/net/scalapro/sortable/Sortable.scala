@@ -163,7 +163,6 @@ trait SortableProps extends js.Object {
 }
 
 
-
 @js.native
 class Sortable(element: Element, props: js.Any) extends js.Any {
   val el: Element = js.native
@@ -201,6 +200,5 @@ object Sortable extends js.Object {
   def apply(element:Element):Sortable = js.native
   @JSName("create")
   def apply(element:Element, props:js.Any):Sortable = js.native
-
 }
 

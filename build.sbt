@@ -7,10 +7,9 @@ name := "Sortable JS Facade"
 normalizedName := "sortable-js-facade"
 organization := "net.scalapro"
 
-version := "0.2-SNAPSHOT"
+version := "0.2.1"
 
 scalaVersion := "2.12.1"
-licenses += ("MIT License", url("http://www.opensource.org/licenses/mit-license.php"))
 
 libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.1"
