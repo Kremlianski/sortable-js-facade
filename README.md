@@ -223,4 +223,7 @@ __toggleClass(el: Node, name: String, state: Boolean): Uni__ - adds or removes a
 ###See code of [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
 
+###See also an [example with scalajs-react](https://github.com/Kremlianski/monix-react-sortable)
+
+
 
