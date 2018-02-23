@@ -1,12 +1,13 @@
 package net.scalapro.sortable
 
 import org.scalajs.dom._
+
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSName, ScalaJSDefined}
+import scala.scalajs.js.annotation.{JSGlobal, JSName}
 import scala.scalajs.js.|
 
 
-@ScalaJSDefined
+@js.native
 trait EventS extends js.Object {
   val `type`: js.Any
   val to: js.Any
@@ -17,7 +18,7 @@ trait EventS extends js.Object {
   val newIndex: js.Any
 }
 
-@ScalaJSDefined //move event
+@js.native //move event
 trait EventM extends js.Object {
   val `type`: js.Any
   val to: js.Any
@@ -30,7 +31,7 @@ trait EventM extends js.Object {
 
 
 //this trait is very optional
-@ScalaJSDefined
+@js.native
 trait SortableProps extends js.Object {
 
   val group: js.UndefOr[String | js.Any] = js.undefined // or { name: "...", pull: [true, false, clone], put: [true, false, array] }
@@ -162,7 +163,7 @@ trait SortableProps extends js.Object {
   val onClone: js.UndefOr[js.Function1[EventS, Unit]] = js.undefined
 }
 
-
+@JSGlobal
 @js.native
 class Sortable(element: Element, props: js.Any) extends js.Any {
   val el: Element = js.native
@@ -176,8 +177,8 @@ class Sortable(element: Element, props: js.Any) extends js.Any {
   def destroy(): Unit = js.native
 }
 
-@JSName("Sortable.utils")
 @js.native
+@JSGlobal
 object Utils extends js.Object {
   def on(el:Node, event:String, fn: js.Function1[Event, Unit]):Unit = js.native
   def off(el:Node, event:String, fn: js.Function1[Event, Unit]):Unit = js.native
@@ -195,6 +196,7 @@ object Utils extends js.Object {
 }
 
 @js.native
+@JSGlobal
 object Sortable extends js.Object {
   @JSName("create")
   def apply(element:Element):Sortable = js.native
