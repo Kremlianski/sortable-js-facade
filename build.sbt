@@ -7,9 +7,11 @@ name := "Sortable JS Facade"
 normalizedName := "sortable-js-facade"
 organization := "net.scalapro"
 
-version := "0.2.1"
+version := "0.2.2"
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.4"
+
+crossScalaVersions := Seq("2.11.8", "2.12.4") 
 
 libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.1"
