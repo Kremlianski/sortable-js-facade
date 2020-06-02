@@ -1,5 +1,7 @@
 # sortable-js-facade
 
+/!\ Deprecated repository. See a fork here: https://github.com/openmole/sortable-js-facade
+
 ###See [DEMO](http://projects.scalapro.net/sortable-js-facade/)
 
 ##a scala.js facade for the [Sortable.js](https://github.com/RubaXa/Sortable)
