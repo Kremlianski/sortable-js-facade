@@ -31,31 +31,39 @@ jsDependencies ++= Seq(
 ```  
   
 **Simple usage**:
+```scala
+new Sortable(dom.document.getElementById("items"), null)
+```
 
+or using the companion object:
 ```scala
 Sortable(dom.document.getElementById("items"))
 ```
 
 **With options**:
 ```scala
+val put: js.Function1[Sortable, js.Any] = {(to:Sortable ) => to.el.children.length < 4}
 
-val options = SortableOptions
-            .animation(100)
+new Sortable(dom.document.getElementById("qux1"), js.Dictionary(
+      "group" -> js.Dictionary(
+        "name" -> "qux1",
+        "put" -> put),
+      "animation" -> 100
 
-Sortable(dom.document.getElementById("qux1"), options)
+    )
+ )
 ```
-
 ## class Sortable
 ### Constructor
 
 ```scala
-Sortable(element, options)
+new Sortable(element, options)
 ```
 __element__: _org.scalajs.dom.Element_ - an html element that contains a list of elements to be sorted
 
 __options__: _js.Any_ - a plain javascript object of options. You can use _js.Dictionary_, _js.Dynamic.literal_. Or you can use the _SortableProps_ trait (see below). The full list of options is described [here](https://github.com/RubaXa/Sortable#options). Can be _null_. Then all options take their default values.
 
-### Methods
+###Methods
 
 __option(name: String): js.Dynamic__ - returns the value of the option
 
@@ -105,10 +113,11 @@ See [example](http://projects.scalapro.net/sortable-js-facade/#example12)
 You can use this trait to define options:
 
 ```scala
-val options = SortableOptions
-            .group("bar")
-            .animation(100)
-Sortable(el, options)
+val prop = new SortableProps {
+      override val group = "bar"
+      override val animation = 100
+    }
+Sortable(el, prop)
 
 ```
 ###Members
