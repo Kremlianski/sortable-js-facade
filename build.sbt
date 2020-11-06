@@ -7,7 +7,7 @@ name := "Sortable JS Facade"
 normalizedName := "sortable-js-facade"
 organization := "net.scalapro"
 
-version := "0.3"
+version := "0.3-SNAPSHOT"
 
 scalaVersion := "2.13.1"
 
