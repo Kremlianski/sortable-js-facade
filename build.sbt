@@ -7,12 +7,12 @@ name := "Sortable JS Facade"
 normalizedName := "sortable-js-facade"
 organization := "net.scalapro"
 
-version := "0.2.1"
+version := "1.0.0"
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.13.3"
 
 libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.9.1"
+  "org.scala-js" %%% "scalajs-dom" % "1.0.0"
 )
 
 pomExtra in Global := {

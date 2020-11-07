@@ -19,16 +19,16 @@ Add to **build.sbt**:
 
 ```scala
 libraryDependencies ++= Seq(
-  "net.scalapro" %%% "sortable-js-facade" % "0.2.1"
-)
-
-//you can't add sortable.js 1.5.0 yet. If you need it, add it to html of the page manually
-jsDependencies ++= Seq(
-  "org.webjars.bower" % "github-com-RubaXa-Sortable" % "1.4.2"
-    / "1.4.2/Sortable.js" minified "Sortable.min.js"
+  "net.scalapro" %%% "sortable-js-facade" % "1.0.0"
 )
 
 ```  
+
+You should also get sortablejs lib:
+
+```
+   npm i sortablejs
+```
   
 **Simple usage**:
 ```scala
