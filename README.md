@@ -1,8 +1,8 @@
 # sortable-js-facade
 
-###See [DEMO](http://projects.scalapro.net/sortable-js-facade/)
+### See [DEMO](http://projects.scalapro.net/sortable-js-facade/)
 
-##a scala.js facade for the [Sortable.js](https://github.com/RubaXa/Sortable)
+## a scala.js facade for the [Sortable.js](https://github.com/RubaXa/Sortable)
 
 
 + [Quick Start](https://github.com/Kremlianski/sortable-js-facade/blob/master/README.md#quick-start)
@@ -14,7 +14,7 @@
 
 
 
-##Quick Start
+## Quick Start
 Add to **build.sbt**:
 
 ```scala
@@ -80,7 +80,7 @@ __save(): Unit__ - saves the current sorting
 __destroy(): Unit__ - removes the sortable functionality completely
 
 
-##Companion
+## Companion
 It has only one but very useful method __apply__, which is a facade for native static __create__ method. It allows to do this:
 ```scala
 Sortable(el1)
@@ -88,9 +88,9 @@ Sortable(el2, options)
 
 ```
 
-##Events
+## Events
 See [example](http://projects.scalapro.net/sortable-js-facade/#example12)
-###EventS (Sortable event)
+### EventS (Sortable event)
 
 + to: HTMLElement — list, in which moved element.
 + from: HTMLElement — previous list
@@ -98,7 +98,7 @@ See [example](http://projects.scalapro.net/sortable-js-facade/#example12)
 + oldIndex: Number | undefined — old index within parent
 + newIndex: Number | undefined — new index within parent
 
-###EventM (Move Event)
+### EventM (Move Event)
 
 + to: HTMLElement
 + from: HTMLElement
@@ -108,7 +108,7 @@ See [example](http://projects.scalapro.net/sortable-js-facade/#example12)
 + relatedRect: TextRectangle
 
 
-##SortableProps trait
+## SortableProps trait
 
 You can use this trait to define options:
 
@@ -120,7 +120,7 @@ val prop = new SortableProps {
 Sortable(el, prop)
 
 ```
-###Members
+### Members
 ___group___: _js.UndefOr[String | js.Any]_ - defines a group name or an object
 
 __sort__: _js.UndefOr[Boolean]_ - sorting inside list
@@ -219,11 +219,11 @@ __toggleClass(el: Node, name: String, state: Boolean): Uni__ - adds or removes a
 
 
 
-###See [DEMO](http://projects.scalapro.net/sortable-js-facade/)      
-###See code of [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
+### See [DEMO](http://projects.scalapro.net/sortable-js-facade/)      
+### See code of [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
 
-###See also an [example with scalajs-react](https://github.com/Kremlianski/monix-react-sortable)
+### See also an [example with scalajs-react](https://github.com/Kremlianski/monix-react-sortable)
 
 
 
