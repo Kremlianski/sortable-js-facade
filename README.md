@@ -89,7 +89,7 @@ Sortable(el2, options)
 ```
 
 ## Events
-See [example](http://projects.scalapro.net/sortable-js-facade/#example12)
+See [example](http://exxo.ru/projects_scalapro/sortable-js-facade/#example12)
 ### EventS (Sortable event)
 
 + to: HTMLElement — list, in which moved element.
@@ -219,7 +219,7 @@ __toggleClass(el: Node, name: String, state: Boolean): Uni__ - adds or removes a
 
 
 
-### See [DEMO](http://projects.scalapro.net/sortable-js-facade/)      
+### See [DEMO](http://exxo.ru/projects_scalapro/sortable-js-facade/)      
 ### See code of [examples](https://github.com/Kremlianski/scalajs-sortable-demos)
 
 
